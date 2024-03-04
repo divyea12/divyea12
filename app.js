@@ -10,7 +10,7 @@ const nodemailer = require('nodemailer');
 const cloudinary = require('./cloudinary');
 const cookieParser = require('cookie-parser');
 
-app.use(cors({ origin: 'https://stellar-meringue-bb25e0.netlify.app' }));
+app.use(cors({ origin: '*' }));
 
 app.use(cookieParser());
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
